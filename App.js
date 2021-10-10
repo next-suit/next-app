@@ -1,6 +1,5 @@
 import {StatusBar} from 'expo-status-bar';
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
 import {NativeBaseProvider} from "native-base/src/core/NativeBaseProvider";
 import {SafeAreaProvider} from "react-native-safe-area-context";
 import {DarkTheme, DefaultTheme, NavigationContainer} from "@react-navigation/native";
@@ -16,7 +15,7 @@ export default function App() {
     },
     colors: {
       primary: {
-        500: '#FF0000', // 主题色
+        500: '#50B4D0', // 主题色
       },
     },
   })
