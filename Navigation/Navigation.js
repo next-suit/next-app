@@ -1,8 +1,8 @@
 import React from "react";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
-import Home from "../pages/Home";
-import User from "../pages/User";
+import Home from "../pages/BottomTabs/Home";
+import User from "../pages/BottomTabs/User";
 import Product from "../pages/Product/Product";
 import Login from "../pages/Login";
 
@@ -18,7 +18,7 @@ const Navigation = (props) => {
       <Stack.Screen name={'Product'} component={Product} />
     </Stack.Navigator>
   );
-}
+};
 
 const Tabs = createBottomTabNavigator();
 const BottomTabs = props => {
@@ -30,6 +30,6 @@ const BottomTabs = props => {
       <Tabs.Screen name={'User'} component={User} />
     </Tabs.Navigator>
   );
-}
+};
 
 export default Navigation

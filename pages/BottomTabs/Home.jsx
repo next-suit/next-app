@@ -10,6 +10,6 @@ const Home = (props) => {
       <Button onPress={() => props.navigation.navigate('Login')}>Login</Button>
     </Center>
   );
-}
+};
 
 export default Home

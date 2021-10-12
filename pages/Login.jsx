@@ -8,6 +8,6 @@ const Login = (props) => {
       <View mt={12}><Center><Container><Text>沉浸式页面，全屏，可以设置背景图片 &lt;ImageBackground&gt;</Text></Container></Center></View>
     </View>
   );
-}
+};
 
 export default Login

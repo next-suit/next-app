@@ -17,6 +17,6 @@ const Product = (props) => {
       </Container>
     </Center>
   );
-}
+};
 
 export default Product
