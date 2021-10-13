@@ -1,5 +1,6 @@
 import React from "react";
 import {Center, Container, Text, View} from "native-base";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const Login = (props) => {
 
