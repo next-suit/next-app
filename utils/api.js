@@ -1,6 +1,7 @@
 import {API_DOMAIN} from "./const";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import {toast} from "./helper";
+import {navigate} from "./navigation";
 
 const api = {
   get,
@@ -59,6 +60,7 @@ async function request(method, path, body, config = {}){
         throw new Error(message);
       }else if (response.status === 401){
         // 需要登录授权
+        navigate('Login');
         throw new Error(response.message);
       }else if (response.status === 404){
         toast('404 Not Found.');

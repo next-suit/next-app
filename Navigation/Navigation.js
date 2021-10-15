@@ -14,7 +14,10 @@ const Navigation = (props) => {
     <Stack.Navigator>
       <Stack.Screen name={'Root'} component={BottomTabs} options={{headerShown: false}} />
       {/* 定义其它内页 */}
-      <Stack.Screen name={'Login'} component={Login} options={{headerShown: false}} />
+      <Stack.Group screenOptions={{presentation: 'modal', headerShown: false}}>
+        <Stack.Screen name={'Login'} component={Login} />
+        <Stack.Screen name={'Register'} component={Login} />
+      </Stack.Group>
       <Stack.Screen name={'Product'} component={Product} />
     </Stack.Navigator>
   );
