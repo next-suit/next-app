@@ -2,7 +2,7 @@ import {StatusBar} from 'expo-status-bar';
 import React from 'react';
 import {SafeAreaProvider} from "react-native-safe-area-context";
 import {NavigationContainer} from "@react-navigation/native";
-import Navigation from "./Navigation/Navigation";
+import Navigation from "./navigation/Navigation";
 import {navigationRef} from "./utils/navigation";
 import {NativeBaseProvider} from "native-base";
 import {nativeBaseTheme, navigationTheme} from "./utils/theme";

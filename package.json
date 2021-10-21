@@ -5,9 +5,9 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "build:android": "expo build:android",
+    "build:android": "turtle build:android --type apk --keystore-path ./next-app-keystore.jks --keystore-alias next-app",
     "build:ios": "expo build:ios",
-    "build:web": "expo build:web",
+    "build:web": "expo build:web --no-pwa",
     "eject": "expo eject"
   },
   "dependencies": {
