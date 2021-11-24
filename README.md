@@ -19,6 +19,16 @@ export EXPO_ANDROID_KEYSTORE_PASSWORD="123456"
 export EXPO_ANDROID_KEY_PASSWORD="123456"
 ```
 
+#### 更改 app.json 里的包名为自己的
+```bash
+"ios": {
+  "bundleIdentifier": "com.next.app.template"
+},
+"android": {
+  "package": "com.next.app.template"
+}
+```
+
 ## 自动更新
 - [expo 官网文档](https://docs.expo.dev/distribution/hosting-your-app)
 
